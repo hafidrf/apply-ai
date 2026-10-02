@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node api.js && vite",
     "prebuild": "node scripts/clean-assets.mjs",
-    "build": "tsc -b && vite build",
+    "build": "node api.js && tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview"
   },
